@@ -10,10 +10,10 @@ class ColorsResourceTest {
     @Test
     void getColor() {
         given()
-                .pathParam("hex", "#000000")
+                .pathParam("hex", "#ffffff")
                 .when().get("/colors/{hex}")
                 .then()
                 .statusCode(200)
-                .body(is("yellow"));
+                .body(is("#ffffff"));
     }
 }
