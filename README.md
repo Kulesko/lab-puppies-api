@@ -7,3 +7,5 @@
 </div>
 
 ![GitHub](https://img.shields.io/github/license/Kulesko/lab-puppies-server)
+
+This project is built on [Quarkus](https://quarkus.io/).
