@@ -1,19 +1,19 @@
 package com.kulesko;
 
+import io.restassured.http.ContentType;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
-import static org.hamcrest.CoreMatchers.is;
 
 class ColorResourceTest {
 
     @Test
     void getColor() {
         given()
-                .pathParam("hex", "#ffffff")
-                .when().get("/colors/{hex}")
+                .body("{}")
+                .contentType(ContentType.JSON)
+                .when().post("/v1/colors")
                 .then()
-                .statusCode(200)
-                .body(is("#ffffff"));
+                .statusCode(200);
     }
 }
