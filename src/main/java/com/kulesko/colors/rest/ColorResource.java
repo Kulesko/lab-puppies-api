@@ -25,7 +25,7 @@ public class ColorResource {
     @Produces(MediaType.APPLICATION_JSON)
     public List<ColorPuppy> matchColors(SearchQuery body) {
 
-        return colorsService.getColor(body);
+        return colorsService.findMatchingColors(body);
     }
 
 

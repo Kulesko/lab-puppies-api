@@ -1,25 +1,25 @@
 package com.kulesko.colors.json;
 
 public class SearchQuery {
-    private ColorPuppy origin;
+    private ColorPuppy reference;
     private int deltaE;
     private int samples;
 
     public SearchQuery() {
     }
 
-    public SearchQuery(ColorPuppy origin, int deltaE, int samples) {
-        this.origin = origin;
+    public SearchQuery(ColorPuppy reference, int deltaE, int samples) {
+        this.reference = reference;
         this.deltaE = deltaE;
         this.samples = samples;
     }
 
-    public ColorPuppy getOrigin() {
-        return origin;
+    public ColorPuppy getReference() {
+        return reference;
     }
 
-    public void setOrigin(ColorPuppy origin) {
-        this.origin = origin;
+    public void setReference(ColorPuppy reference) {
+        this.reference = reference;
     }
 
     public int getDeltaE() {
